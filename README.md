@@ -15,15 +15,18 @@ venv\Scripts\activate
 
 Virtual enironment is creaed
 
+
 Now, to install the necessary extensions
 
-pip install reqquirements.txt
+pip install requirements.txt
+
 
 Then execute the code
 
 Create a user to validate the authentication using username and password
 
 python manage.py createsuperuser
+
 
 Run the Code and open the website link
 
