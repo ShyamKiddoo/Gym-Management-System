@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load tailwind_filters %}
+{% load static %}
+
+{% block content %}
+<div class="mt-10 max-w-lg mx-auto">
+    <div class="mb-4 flex justify-center">
+        <h1 class="font-mono text-4xl">Login To SSN Gym Management system</h1>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="w-full bg-gray-800 hover:bg-gray-900 px-3 py-2 rounded-md text-white" type="submit">Login</button>
+        
+    </form>
+    <div class="flex py-5 border-t border-gray-200 mt-5 justify-center">
+        <div class="box-content p-2 border-2 ">
+            <h3>If you can't login, contact the SSN Administrator -Gym Master</a></h3>
+          </div>
+
+    </div>
+</div>
+{% endblock content %}

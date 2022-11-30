@@ -1,0 +1,1 @@
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
